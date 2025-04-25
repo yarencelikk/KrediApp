@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KrediApp.RenkSeciciPage"
+             Title="Renk Seçici">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="Renk Ayarı" FontAttributes="Bold" FontSize="20" HorizontalOptions="Center" />
+
+        <!-- Kırmızı -->
+        <Label Text="Kırmızı Ton:" TextColor="Red" />
+        <Slider x:Name="redSlider"
+                Minimum="0" Maximum="255"
+                ValueChanged="OnColorChanged"
+                ThumbColor="Red"
+                MaximumTrackColor="Red"
+                MinimumTrackColor="Red"
+                />
+        <Label x:Name="redLabel" Text="R: 0" TextColor="Red"/>
+
+        <!-- Yeşil -->
+        <Label Text="Yeşil Ton:" TextColor="Green" />
+        <Slider x:Name="greenSlider"
+                Minimum="0" Maximum="255"
+                ValueChanged="OnColorChanged"
+                ThumbColor="Green"
+                MaximumTrackColor="Green"
+                MinimumTrackColor="Green"
+                />
+        <Label x:Name="greenLabel" Text="G: 0" TextColor="Green"/>
+
+        <!-- Mavi -->
+        <Label Text="Mavi Ton:" TextColor="Blue" />
+        <Slider x:Name="blueSlider"
+                Minimum="0" Maximum="255"
+                ValueChanged="OnColorChanged"
+                ThumbColor="Blue"
+                MaximumTrackColor="Blue"
+                MinimumTrackColor="Blue"
+                />
+        <Label x:Name="blueLabel" Text="B: 0" TextColor="Blue"/>
+
+        <Label x:Name="hexLabel"
+               Text="Renk: #000000"
+               FontAttributes="Bold"
+               FontSize="16"
+               HorizontalOptions="Center"
+               TextColor="Black" />
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Button Text="Kopyala" Clicked="OnCopyClicked"/>
+            <Button Text="Rastgele" Clicked="OnRandomClicked"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

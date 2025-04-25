@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KrediApp.KrediHesaplamaPage"
+             Title="Kredi Hesaplama">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Kredi Türü Seçin:"/>
+        <Picker x:Name="krediPicker">
+            <Picker.Items>
+                <x:String>İhtiyaç</x:String>
+                <x:String>Konut</x:String>
+                <x:String>Taşıt</x:String>
+                <x:String>Ticari</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Label Text="Kredi Tutarı (₺):"/>
+        <Entry x:Name="tutarEntry" Keyboard="Numeric"/>
+
+        <Label Text="Faiz Oranı (%):"/>
+        <Entry x:Name="faizEntry" Keyboard="Numeric"/>
+
+        <Label Text="Vade (Ay):"/>
+        <Slider x:Name="vadeSlider" Minimum="1" Maximum="60" ValueChanged="OnVadeChanged" ThumbColor="#FF8C00"
+MinimumTrackColor="#FF8C00"/>
+        <Label x:Name="vadeLabel" Text="Vade: 1 Ay"/>
+
+        <Button Text="Hesapla"
+        Clicked="OnHesaplaClicked"
+        BackgroundColor="#FF8C00"
+        TextColor="White"
+        CornerRadius="10"/>
+
+        <Label x:Name="sonucLabel"/>
+    </VerticalStackLayout>
+</ContentPage>

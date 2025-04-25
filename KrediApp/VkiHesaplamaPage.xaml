@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KrediApp.VkiHesaplamaPage"
+             Title="Vki Hesaplama">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Kilo (kg):"/>
+        <Slider x:Name="kiloSlider" Minimum="30" Maximum="150" ValueChanged="OnVkiChanged" ThumbColor="#FF8C00"
+MinimumTrackColor="#FF8C00"/>
+        <Label x:Name="kiloLabel" Text="Kilo: 70"/>
+
+        <Label Text="Boy (cm):"/>
+        <Slider x:Name="boySlider" Minimum="100" Maximum="220" ValueChanged="OnVkiChanged" ThumbColor="#FF8C00"
+MinimumTrackColor="#FF8C00"/>
+        <Label x:Name="boyLabel" Text="Boy: 170"/>
+
+        <Label x:Name="vkiLabel" Text="VKİ: Hesaplanıyor..."/>
+    </VerticalStackLayout>
+</ContentPage>

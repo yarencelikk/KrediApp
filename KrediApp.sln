@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrediApp", "KrediApp\KrediApp.csproj", "{E6066E1B-9509-401C-8071-7BFAA3B59939}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6066E1B-9509-401C-8071-7BFAA3B59939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6066E1B-9509-401C-8071-7BFAA3B59939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6066E1B-9509-401C-8071-7BFAA3B59939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6066E1B-9509-401C-8071-7BFAA3B59939}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C80B778F-A889-4B99-8896-5024425B6762}
+	EndGlobalSection
+EndGlobal
